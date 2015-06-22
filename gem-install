@@ -1,0 +1,5 @@
+#!/bin/sh
+
+gem install $@ \
+  && rm -f ${GEM_HOME}/cache/* 
+
