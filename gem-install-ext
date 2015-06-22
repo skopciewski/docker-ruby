@@ -2,4 +2,5 @@
 
 apk --update add --virtual build-dependencies ruby-dev build-base \
   && gem-install $@ \
-  && apk del build-dependencies
+  && apk del build-dependencies \
+  && rm -rf /var/cache/apk/*
