@@ -1,0 +1,6 @@
+#!/bin/sh
+
+apk --update add --virtual build-dependencies ruby-dev build-base \
+  && $@ \
+  && apk del build-dependencies \
+  && rm -rf /var/cache/apk/*

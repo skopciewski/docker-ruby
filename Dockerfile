@@ -8,6 +8,7 @@ ENV PATH $GEM_HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/
 
 # copy gemrc and gem utils
 COPY gemrc /root/.gemrc
+COPY run-ext /usr/local/sbin/run-ext
 COPY gem-install /usr/local/sbin/gem-install
 COPY gem-install-ext /usr/local/sbin/gem-install-ext
 
