@@ -1,6 +1,6 @@
 FROM gliderlabs/alpine:edge
 
-RUN apk-install ruby ruby-bundler ruby-rake
+RUN apk-install ruby ruby-io-console ruby-bundler ruby-rake
 
 # install gems globally, for great justice
 ENV GEM_HOME /opt/gems
