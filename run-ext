@@ -1,6 +1,9 @@
 #!/bin/sh
 
-apk --update add --virtual build-dependencies ruby-dev build-base libffi-dev \
+apk --update add --virtual build-dependencies \
+  build-base \
+  libffi-dev \
+  ruby-dev \
   && $@ \
   && apk del build-dependencies \
   && rm -rf /var/cache/apk/*
