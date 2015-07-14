@@ -17,5 +17,6 @@ ENV BUNDLE_APP_CONFIG /opt/bundle
 
 # configure bundler to use global gems
 RUN bundle config path "$GEM_HOME" \
-  && bundle config bin "$GEM_HOME/bin"
+  && bundle config bin "$GEM_HOME/bin" \
+  && bundle config console pry
 
