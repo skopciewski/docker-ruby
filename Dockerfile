@@ -16,7 +16,6 @@ RUN bundle config path "$GEM_HOME" \
 
 # copy gemrc and gem utils
 COPY data/gemrc /root/.gemrc
-COPY data/run-ext /usr/local/sbin/run-ext
-COPY data/gem-install /usr/local/sbin/gem-install
-COPY data/gem-install-ext /usr/local/sbin/gem-install-ext
+ADD data/sbin /usr/local/sbin
 
+CMD ["sh"]
