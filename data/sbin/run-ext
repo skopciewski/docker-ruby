@@ -1,0 +1,5 @@
+#!/bin/sh
+
+apk-install-build-dependencies \
+  && $@ \
+  && apk-remove-build-dependencies 
