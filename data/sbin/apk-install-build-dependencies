@@ -1,8 +1,7 @@
 #!/bin/sh
 
-apk --update add --virtual build-dependencies \
+apk add --no-cache --virtual build-dependencies \
   build-base \
   libffi-dev \
   ruby-dev \
   && rm -rf /var/cache/apk/*
-

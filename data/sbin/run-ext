@@ -2,4 +2,4 @@
 
 apk-install-build-dependencies \
   && $@ \
-  && apk-remove-build-dependencies 
+  && apk-remove-build-dependencies

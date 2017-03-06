@@ -1,6 +1,6 @@
-FROM gliderlabs/alpine:3.4
+FROM alpine:3.5
 
-RUN apk-install ruby ruby-io-console ruby-bundler ruby-rake ca-certificates
+RUN apk add --no-cache ruby ruby-io-console ruby-bundler ruby-rake ca-certificates
 
 # install gems globally, for great justice
 ENV GEM_HOME /opt/gems
