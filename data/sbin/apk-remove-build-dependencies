@@ -1,5 +1,5 @@
 #!/bin/sh
 
-apk update && \
-  apk del build-dependencies && \
-  rm -rf /var/cache/apk/*
+apk update \
+  && apk del build-dependencies \
+  && rm -rf /var/cache/apk/*
