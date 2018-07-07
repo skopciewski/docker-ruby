@@ -1,6 +1,6 @@
 FROM alpine:3.8
 
-RUN apk add --no-cache ruby ruby-io-console ruby-bundler ruby-rake ca-certificates
+RUN apk add --no-cache ruby ruby-io-console ruby-bundler ruby-rake ruby-etc ca-certificates
 
 # install gems globally, for great justice
 ENV GEM_HOME /opt/gems
