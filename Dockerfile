@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.9
 
 RUN apk add --no-cache ruby ruby-io-console ruby-bundler ruby-rake ruby-etc ca-certificates
 
